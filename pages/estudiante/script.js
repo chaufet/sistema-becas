@@ -1,18 +1,19 @@
-
 function login() {
-    user = document.getElementById("name").value;
-    password = document.getElementById("password").value;
+    const user = document.getElementById("name").value;
+    const password = document.getElementById("password").value;
 
-    // call backend
-    if (password == "123") {
-        document.getElementsByTagName("MAIN")[0].style.display = "block";
+    // Simulación de autenticación
+    if (password === "123") {
+        document.getElementById("main").style.display = "block";
+    } else {
+        alert("Contraseña incorrecta");
     }
 }
 
 function beca() {
-    // call al backend
-    // promedio = 
-    //if (promedio > 4.3) {
-    //    document.getElementById("beca").style.display = "block";
-    //}
+    // Simulación de la verificación de beca
+    // const promedio = obtenerPromedio(); // Esto debe implementarse
+    // if (promedio > 4.3) {
+    //     document.getElementById("beca").style.display = "block";
+    // }
 }

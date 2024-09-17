@@ -1,27 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Importar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEa4lFztzzg07Cn5CtwkE2TEXlgxg1" crossorigin="anonymous">
+    <!-- Importar Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesAdmin.css">
+    <title>Inicio de Sesión</title>
 </head>
+
 <body>
-    <div>
-        <label for="name">Usuario:</label> <br>
-        <input type="text" id="name" name="name"> <br>
-
-        <label for="password">Contraseña:</label> <br>
-        <input type="password" id="password" name="password"> <br>
-
-        <button>Login</button>
-    </div>
     <main>
-        <button>Añadir Estudiante</button>
-        <button>Eliminar Estudiante</button>
+        <div class="wrapper">
+            <header class="container mt-4 mb-4 d-flex align-items-center justify-content-center">
+                <i class="bi bi-house"></i>
+                <h1 class="mb-0">Inicio de Sesión</h1>
+            </header>
 
-        <button>Añadir Nota</button>
-        <button>Eliminar Nota</button>
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="w-100">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4 text-center">Por favor, inicia sesión</h3>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Usuario:</label>
+                                <input type="text" id="name" name="name" class="form-control form-control-lg"
+                                    placeholder="Ingresa tu usuario">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña:</label>
+                                <input type="password" id="password" name="password" class="form-control form-control-lg"
+                                    placeholder="Ingresa tu contraseña">
+                            </div>
+                            <button class="btn btn-primary w-100" onclick="login()">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-0sF2i2CZ6gM35b/X2zFR8D2+J94ahRQ6g7LP8WkRZkjj1L4yfbqXJr60Wc9cqpeA"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
